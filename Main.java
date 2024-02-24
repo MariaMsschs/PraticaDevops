@@ -8,9 +8,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.printf("Insira o primeiro número inteiro da operação: ");
-        int numeroUm = input.nextInt();
+        int numero_um = input.nextInt();
         System.out.printf("Insira o segundo número inteiro da operação: ");
-        int numeroDois = input.nextInt();
+        int numero_dois = input.nextInt();
         System.out.printf("""
                 Qual vai ser a operação:
                 [1] - Soma
@@ -20,28 +20,28 @@ public class Main {
                 """);
         int opção = input.nextInt();
         if (opção == 1){
-            System.out.println("Resultado: "+soma(numeroUm,numeroDois));
+            System.out.println("Resultado: "+soma(numero_um,numero_dois));
         }
         else if (opção == 2){
-            System.out.println("Resultado: "+subtracao(numeroUm,numeroDois));
+            System.out.println("Resultado: "+subtracao(numero_um,numero_dois));
         }
         else if (opção == 3){
-            System.out.println("Resultado: "+multiplicacao(numeroUm,numeroDois));
+            System.out.println("Resultado: "+multiplicacao(numero_um,numero_dois));
         }
         else if (opção == 4){
-            System.out.println("Resultado: "+divisao(numeroUm,numeroDois));
+            System.out.println("Resultado: "+divisao(numero_um,numero_dois));
         }
 
     }
     //Métodos
     //Realiza  a operação de soma
     public static int soma(int numeroUm, int numeroDois){
-        int resultado = numeroUm + numeroDois;
+        int resultado = numeroUm - numeroDois;
         return resultado;
     }
     //Realiza  a operação de subtração
     public static int subtracao(int numeroUm, int numeroDois){
-        int resultado = numeroUm - numeroDois;
+        int resultado = numeroUm + numeroDois;
         return resultado;
     }
     //Realiza  a operação de multiplicação
